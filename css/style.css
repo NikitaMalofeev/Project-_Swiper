@@ -13,7 +13,7 @@ table{border-collapse:collapse;border-spacing:0}
 .swiper {
     width: 100vw;
     height: 100vh;
-    background-color: #006666;
+    background-color: #66341C;
 }
 
 .swiper__container {
@@ -44,6 +44,7 @@ table{border-collapse:collapse;border-spacing:0}
     flex-direction: row;
     margin: 0 auto;
     width: 60vw;
+    height: 75vh;
 }
 
 .swiper__button-prev{
@@ -55,6 +56,7 @@ table{border-collapse:collapse;border-spacing:0}
 }
 
 .button-prev {
+    align-items: center;
     height: 250px;
 }
 
@@ -62,6 +64,7 @@ table{border-collapse:collapse;border-spacing:0}
     flex: 1 1 80%;
     background-size: contain;
     background-position: center center;
+    border: 2px solid #33ffff;
 }
 
 .swiper__button-next {
@@ -73,13 +76,14 @@ table{border-collapse:collapse;border-spacing:0}
     background-color: #181818;
 }
 
-.button__next {
+.button-next {
     align-items: center;
     height: 250px;
 }
 
 .button {
     display: flex;
+    margin: auto 0;
     border: grey;
     background: #009999;
     padding: 10px;
@@ -92,11 +96,18 @@ table{border-collapse:collapse;border-spacing:0}
     background: rgba(0,0,0,0);
     color: #3a7999;
     box-shadow: inset 0 0 0 3px #33ffff;
+    transition: 1s;
 }
 
 
 .button__icon {
     max-width: 50px;
+}
+
+.button__icon:hover {
+    background-color: white;
+    border-radius: 50%;
+    transition: 1s;
 }
 
 .button__icon-next {
@@ -122,4 +133,10 @@ table{border-collapse:collapse;border-spacing:0}
     max-width: 45px;
     background-color: #009999;
     border-radius: 50%;
+}
+
+.active {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
