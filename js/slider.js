@@ -2,10 +2,10 @@ let images = [{
     url: "../asset/item1.jpg",
     title: "Mermeid and waterfall"
 }, {
-    url: "../asset/item2.jpg",
+    url: "../asset/item3.jpg",
     title: "Queen of autumn"
 }, {
-    url: "../asset/item3.jpg",
+    url: "../asset/item2.jpg",
     title: "Cyberpank girl"
 }, {
     url: "../asset/item4.jpg",
@@ -59,3 +59,4 @@ function initSlider () {
 
 
 document.addEventListener("DOMContentLoaded", initSlider);
+
