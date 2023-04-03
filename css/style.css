@@ -48,11 +48,14 @@ table{border-collapse:collapse;border-spacing:0}
 }
 
 .swiper__button-prev{
+    display: flex;
     height: 50vh;
     margin: 0 auto;
     align-items: center;
     opacity: .5;
-    background-color: #181818
+    background-color: #181818;
+    border-radius: 5px;
+    
 }
 
 .button-prev {
@@ -74,6 +77,7 @@ table{border-collapse:collapse;border-spacing:0}
     margin: 0 auto;
     opacity: .5;
     background-color: #181818;
+    border-radius: 5px;
 }
 
 .button-next {

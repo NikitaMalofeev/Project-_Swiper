@@ -20,8 +20,7 @@ function initSlider () {
     if (!images || !images.length) return;
 
     let sliderImages = document.querySelector('.swiper__content');
-    let sliderArrows = document.querySelector('.button');
-
+    let sliderArrows = document.querySelectorAll('.button');
     
     initImages();
     initArrows();
@@ -35,12 +34,12 @@ function initSlider () {
 
 
     function initArrows () {
-        sliderArrows.querySelectorAll('.button').forEach(arrow => {
+        sliderArrows.querySelectorAll('.button__icon').forEach(arrow => {
             arrow.addEventListener('click', function() {
                 let curImageNum = +sliderImages.querySelector('.active').dataset.index;
                 let nextImageNum;
 
-                if (arrow.classList.contains("button-prev")) {
+                if (arrow.classList.contains("button__icon-prev")) {
                     nextImageNum = curImageNum === 0? images.length - 1 : curImageNum - 1;
                 } else {
                     nextImageNum = curImageNum === images.length - 1? 0 : curImageNum + 1;
